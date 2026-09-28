@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Лабораторная работа №6</title>
+    <title>Лабораторная работа №7</title>
     <style>
         body { font-family: sans-serif; margin: 0; padding: 0; display: flex; flex-direction: column; min-height: 100vh; }
         header { background-color: #333; color: white; padding: 1rem; }
