@@ -1,13 +1,10 @@
 <?php
-
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\MainController;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\ArticleController;
 
-// CRUD-маршруты для управления статьями
 Route::resource('articles', ArticleController::class);
-// Делаем вывод списка статей главной страницей
 Route::get('/', [ArticleController::class, 'index'])->name('home');
 
 Route::get('/galery/{img}', [MainController::class, 'galery'])->name('galery');
