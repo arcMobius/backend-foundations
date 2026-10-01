@@ -37,7 +37,7 @@
         <div style="display: flex; flex-direction: column; gap: 15px;">
             @forelse($approvedComments as $comment)
                 <div style="background: #f9f9f9; padding: 15px; border-radius: 4px; border: 1px solid #eee;">
-                    <strong>{{ $comment->user->name }}</strong> <span style="color: #888; font-size: 0.9em;">({{ $comment->created_at->format('d.m.Y H:i') }})</span>
+                    <strong>{{ $comment->user?->name ?? "Пользователь" }}</strong> <span style="color: #888; font-size: 0.9em;">({{ $comment->created_at->format('d.m.Y H:i') }})</span>
                     <p style="margin-top: 5px;">{{ $comment->body }}</p>
                 </div>
             @empty
